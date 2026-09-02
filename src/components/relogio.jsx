@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import '../App.css';
+import '../css/relogio.css';
  
  export default function Relogio(){
     const [segundos, setSegundos] = useState(0);

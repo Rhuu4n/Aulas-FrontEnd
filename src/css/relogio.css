@@ -1,0 +1,63 @@
+/* Centraliza o relógio na tela inteira */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Fundo azul escuro moderno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Caixa principal do relógio */
+.relogio-container {
+  background: rgba(30, 41, 59, 0.7); /* Fundo semi-transparente */
+  padding: 2.5rem 3.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+}
+
+/* Título */
+.relogio-titulo {
+  color: #94a3b8;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+/* Visor dos números */
+.relogio-visor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; /* Espaço pequeno entre os dígitos */
+  font-family: 'Courier New', Courier, monospace; /* Fonte monoespaçada obrigatória */
+  font-size: 4rem;
+  font-weight: bold;
+  color: #38bdf8; /* Azul neon */
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.5); /* Brilho neon */
+}
+
+/* Destaque visual para a unidade de segundos */
+.relogio-visor .segundos {
+  color: #f43f5e; /* Segundos em vermelho/rosa neon */
+  text-shadow: 0 0 20px rgba(244, 63, 94, 0.5);
+}
+
+/* Animação para fazer os dois pontos (:) piscarem a cada segundo */
+.piscar {
+  animation: piscarAnimacao 1s infinite steps(1);
+  padding: 0 4px;
+}
+
+@keyframes piscarAnimacao {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}

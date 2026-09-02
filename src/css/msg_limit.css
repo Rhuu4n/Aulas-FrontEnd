@@ -1,0 +1,112 @@
+.msg-limit {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mensagem de alerta */
+.msg-limit__alerta {
+    min-height: 30px;
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    text-align: center;
+
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão */
+.msg-limit__botao {
+    width: 200px;
+    height: 200px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #3b82f6,
+        #1d4ed8
+    );
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        inset 0 -8px 0 rgba(0, 0, 0, 0.15);
+
+    transition: all 0.2s ease;
+}
+
+/* Joinha */
+.msg-limit__botao::before {
+    content: "👍";
+
+    font-size: 65px;
+
+    margin-bottom: 10px;
+}
+
+/* Hover */
+.msg-limit__botao:hover {
+    transform: scale(1.08);
+
+    background: linear-gradient(
+        145deg,
+        #60a5fa,
+        #2563eb
+    );
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        inset 0 -8px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Clique */
+.msg-limit__botao:active {
+    transform: scale(0.95);
+
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.3),
+        inset 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .msg-limit__botao {
+        width: 160px;
+        height: 160px;
+
+        font-size: 20px;
+    }
+
+    .msg-limit__botao::before {
+        font-size: 50px;
+    }
+
+    .msg-limit__alerta {
+        font-size: 20px;
+    }
+}
