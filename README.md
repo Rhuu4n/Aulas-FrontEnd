@@ -199,6 +199,7 @@ Registra as versões específicas das dependências instaladas pelo npm.
 
 README.md
 Este arquivo contém as instruções e informações sobre o projeto.
+```
 
 🧭 Navegação entre os exercícios
 O projeto utiliza o React Router DOM para permitir a navegação entre as diferentes páginas da aplicação.
@@ -222,58 +223,6 @@ Exemplo:
   Limite de Mensagens
 </Link>
 
-🛠️ Adicionando um novo exercício
-Para adicionar um novo exercício ao projeto, siga os passos abaixo.
-
-1. Criar o componente
-Dentro da pasta:
-
-src/components/
-
-crie um novo arquivo.
-
-Por exemplo:
-
-calculadora.jsx
-
-2. Criar o componente React
-Dentro do arquivo calculadora.jsx, crie o componente:
-
-function Calculadora() {
-  return (
-    <div>
-      <h1>Calculadora</h1>
-    </div>
-  );
-}
-
-export default Calculadora;
-
-3. Importar o componente
-No arquivo App.jsx, importe o novo componente:
-
-import Calculadora from './components/calculadora';
-
-4. Criar uma nova rota
-Dentro de <Routes>, adicione uma nova rota:
-
-<Route
-  path="/calculadora"
-  element={<Calculadora />}
-/>
-
-5. Adicionar um botão na página inicial
-Adicione um novo Link:
-
-<Link to="/calculadora" className="botao">
-  Calculadora
-</Link>
-
-Agora o novo exercício poderá ser acessado através da página inicial.
-
-A URL será:
-
-http://localhost:3000/calculadora
 
 💻 Comandos principais
 Os principais comandos utilizados no projeto são:
