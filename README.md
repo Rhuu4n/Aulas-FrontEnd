@@ -201,7 +201,7 @@ README.md
 Este arquivo contém as instruções e informações sobre o projeto.
 ```
 
-🧭 Navegação entre os exercícios
+### 🧭 Navegação entre os exercícios
 O projeto utiliza o React Router DOM para permitir a navegação entre as diferentes páginas da aplicação.
 
 As rotas principais são:
@@ -224,7 +224,7 @@ Exemplo:
 </Link>
 
 
-💻 Comandos principais
+### 💻 Comandos principais
 Os principais comandos utilizados no projeto são:
 
 Instalar dependências
@@ -247,7 +247,7 @@ npm run build
 
 Cria uma versão otimizada da aplicação para produção.
 
-🔄 Fluxo para executar o projeto
+### 🔄 Fluxo para executar o projeto
 Sempre que baixar o projeto em um computador novo, siga esta sequência:
 
 git clone URL_DO_REPOSITORIO
@@ -268,7 +268,7 @@ Depois abra no navegador:
 
 http://localhost:3000
 
-⚠️ Problemas comuns
+### ⚠️ Problemas comuns
 npm não é reconhecido
 Se aparecer uma mensagem semelhante a:
 
@@ -308,7 +308,7 @@ E:
 
 npm start
 
-👨‍💻 Desenvolvimento
+### 👨‍💻 Desenvolvimento
 Durante o desenvolvimento, mantenha o servidor executando através de:
 
 npm start
@@ -317,7 +317,7 @@ Após realizar alterações nos arquivos do projeto, o React normalmente atualiz
 
 Caso isso não aconteça, atualize a página manualmente.
 
-📚 Objetivo do projeto
+### 📚 Objetivo do projeto
 O objetivo deste repositório é reunir os exercícios desenvolvidos durante a formação acadêmica, permitindo praticar conceitos como:
 
 Componentes React
@@ -329,8 +329,8 @@ Navegação entre páginas
 Manipulação de eventos
 Estados e propriedades
 Estruturação de aplicações web
-🏫 SENAI Antonio Adolpho Lobbe
+### 🏫 SENAI Antonio Adolpho Lobbe
 Repositório desenvolvido para fins acadêmicos durante as atividades da faculdade SENAI Antonio Adolpho Lobbe.
 
-📄 Licença
+### 📄 Licença
 Este projeto possui finalidade acadêmica e educacional.
