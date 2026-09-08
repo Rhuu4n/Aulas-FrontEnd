@@ -1,0 +1,54 @@
+.aviso-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f7fa;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+/* Mensagem de boas-vindas */
+.aviso-container .aviso-mensagem {
+    margin: 0 0 25px;
+
+    color: #222;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão Voltar */
+.aviso-container .aviso-botao {
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    color: white;
+    background-color: #007bff;
+
+    border-radius: 6px;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+/* Quando passar o mouse */
+.aviso-container .aviso-botao:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Quando clicar */
+.aviso-container .aviso-botao:active {
+    transform: translateY(0);
+}
