@@ -10,7 +10,6 @@ export default function Aviso() {
         const intervalo = setInterval(() => {
         setTempo((i) => i + 1); }, 1000,);
         
-        
         return () => clearInterval(intervalo);    
         
     }, []);

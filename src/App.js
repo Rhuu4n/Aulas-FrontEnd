@@ -4,6 +4,8 @@ import Relogio from './components/relogio';
 import MsgLimit from './components/msg_limit';
 import Aviso from './components/aviso';
 import Titulo from './components/titulo';
+import Satisfacao from './components/satisfacao';
+import Evento from './components/evento';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
                 <Link to="/msg_limit" className="botao">Limite de Curtidas</Link>
                 <Link to="/aviso" className="botao">Aviso com temporizador</Link>
                 <Link to="/titulo" className="botao">Título Dinâmico da Página</Link>
+                <Link to="/satisfacao" className="botao">Formulário de pesquisa de satisfação</Link>
+                <Link to="/evento" className="botao">Formulário de inscrição em evento de tecnologia</Link>
 
               </header>
             </div>
@@ -27,6 +31,8 @@ function App() {
     <Route path="/msg_limit"element={<MsgLimit />}/>
     <Route path="/aviso"element={<Aviso />}/>
     <Route path="/titulo"element={<Titulo />}/>
+    <Route path="/satisfacao"element={<Satisfacao />}/>
+    <Route path="/evento"element={<Evento />}/>
 
   </Routes>
 </BrowserRouter>
