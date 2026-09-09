@@ -3,6 +3,7 @@ import './App.css';
 import Relogio from './components/relogio';
 import MsgLimit from './components/msg_limit';
 import Aviso from './components/aviso';
+import Titulo from './components/titulo';
 
 function App() {
   return (
@@ -14,9 +15,10 @@ function App() {
 
                 <h1>Exercícios Faculdade SENAI Antonio Adolpho Lobbe</h1>
                 <Link to="/relogio" className="botao">Relógio</Link>
-                <Link to="/msg_limit" className="botao">Limite de Mensagens</Link>
+                <Link to="/msg_limit" className="botao">Limite de Curtidas</Link>
                 <Link to="/aviso" className="botao">Aviso com temporizador</Link>
-                
+                <Link to="/titulo" className="botao">Título Dinâmico da Página</Link>
+
               </header>
             </div>
           }/>
@@ -24,6 +26,7 @@ function App() {
     <Route path="/relogio"element={<Relogio />}/>
     <Route path="/msg_limit"element={<MsgLimit />}/>
     <Route path="/aviso"element={<Aviso />}/>
+    <Route path="/titulo"element={<Titulo />}/>
 
   </Routes>
 </BrowserRouter>
