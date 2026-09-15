@@ -6,6 +6,7 @@ import Aviso from './components/aviso';
 import Titulo from './components/titulo';
 import Satisfacao from './components/satisfacao';
 import Evento from './components/evento';
+import Renderizacao from './components/renderizacao';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Link to="/titulo" className="botao">Título Dinâmico da Página</Link>
                 <Link to="/satisfacao" className="botao">Formulário de pesquisa de satisfação</Link>
                 <Link to="/evento" className="botao">Formulário de inscrição em evento de tecnologia</Link>
+                <Link to="/renderizacao" className="botao">Renderizando lista de tarefas</Link>
 
               </header>
             </div>
@@ -33,6 +35,7 @@ function App() {
     <Route path="/titulo"element={<Titulo />}/>
     <Route path="/satisfacao"element={<Satisfacao />}/>
     <Route path="/evento"element={<Evento />}/>
+    <Route path="/renderizacao"element={<Renderizacao />}/>
 
   </Routes>
 </BrowserRouter>
