@@ -20,8 +20,8 @@ export default function Renderizacao(){
             <div className="controles">
                 <input className="input" type="text" placeholder="Adicionar Tarefas" onChange={(e)=>setAdicionar(e.target.value)}/>
             </div>
-            <button className="botao" onClick={Adicionar}>Adicionar</button>
-            <button className="botao" onClick={()=>setTarefas("")}>Limpar Tarefas</button>
+            <button className="btnTarefas" onClick={Adicionar}>Adicionar</button>
+            <button className="btnTarefas" onClick={()=>setTarefas("")}>Limpar Tarefas</button>
         </div>
     );
 };
